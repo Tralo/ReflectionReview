@@ -12,6 +12,10 @@ public class Person {
 		this.age = age;
 		
 	}
+	
+	private Person(String name){
+		this.name = name;
+	}
 
 	public Person(String name, int age, String address) {
 		super();
@@ -31,5 +35,12 @@ public class Person {
 	public String getString(String s,int i){
 		return s + "----" + i;
 	}
+
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", age=" + age + ", address=" + address + "]";
+	}
+	
+	
 
 }
